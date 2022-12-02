@@ -4,5 +4,5 @@ bases:
   - ../../base
 images:
   - name: app
-    newName: imarktest/nodejs-docker
+    newName: limarktest/nodejs-docker
     newTag: 1.1.0
