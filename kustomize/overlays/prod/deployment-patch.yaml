@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: knote
-template:
-  spec:
-    containers:
-      image: limarktest/nodejs-docker:latest
+images:
+  - name: app
+    newName: limarktest/nodejs-docker
+    newTag: 1.1.0
