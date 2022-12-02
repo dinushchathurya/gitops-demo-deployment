@@ -5,6 +5,7 @@ metadata:
   name: node-app-deployment
   labels:
     app: node-app
+namespace: node-app
 spec:
   replicas: 1
   selector:
