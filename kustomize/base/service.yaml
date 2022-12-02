@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: node-app-service
+  name: knote
+namespace: knote
 spec:
   selector:
-    app: node-app 
-  type: ClusterIP
+    app: knote
   ports:
-  - protocol: TCP
-    port: 80
-    targetPort: 3000
+    - port: 80
+      targetPort: 3000
+  type: ClusterIP
