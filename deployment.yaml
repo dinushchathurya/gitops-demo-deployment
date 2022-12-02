@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: node-app
-        image: limarktest/nodejs-docker:latest
+        image: limarktest/nodejs-docker:119
         ports:
         - containerPort: 8080
