@@ -5,5 +5,3 @@ bases:
 imageTags:
   - name: imarktest/nodejs-docker
     newTag: 1.1.0
-patchesStrategicMerge:
-  - deployment-patch.yaml
