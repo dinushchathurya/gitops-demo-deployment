@@ -2,5 +2,7 @@ namePrefix: prod-
 namespace: prod
 bases:
   - ../../base
-patchesStrategicMerge:
-  - deployment-patch.yaml
+images:
+  - name: app
+    newName: limarktest/nodejs-docker
+    newTag: 1.2.0
