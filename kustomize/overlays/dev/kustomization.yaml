@@ -2,6 +2,7 @@ namePrefix: dev-
 namespace: dev
 bases:
   - ../../base
-imageTags:
-  - name: imarktest/nodejs-docker
+images:
+  - name: app
+    newName: imarktest/nodejs-docker
     newTag: 1.1.0
