@@ -1,0 +1,5 @@
+namePrefix: staging-
+bases:
+  - ../../base
+patchesStrategicMerge:
+  - deployment-patch.yaml
