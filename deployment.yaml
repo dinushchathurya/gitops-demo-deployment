@@ -20,4 +20,3 @@ spec:
         image: limarktest/nodejs-docker:latest
         ports:
         - containerPort: 8080
-        
