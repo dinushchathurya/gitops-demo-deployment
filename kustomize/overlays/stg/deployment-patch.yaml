@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: node-app-deployment
-namespace: dev
+namespace: stg
 template:
   spec:
     containers:
