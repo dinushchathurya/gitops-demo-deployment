@@ -16,6 +16,6 @@ spec:
           path: "/"
           backend:
             service:
-              name: node-app
+              name: node-app-service
               port:
                 number: 80
