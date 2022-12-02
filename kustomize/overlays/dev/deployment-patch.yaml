@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: knote
-namespace: dev
+  namespace: dev
 template:
   spec:
     containers:
