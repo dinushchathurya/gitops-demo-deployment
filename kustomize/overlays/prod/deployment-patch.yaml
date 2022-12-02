@@ -2,4 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: knote
-
+images:
+  - name: app
+    newName: imarktest/nodejs-docker
+    newTag: 1.2.0
