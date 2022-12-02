@@ -1,14 +1,21 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
-namespace: node-app
 metadata:
+  namespace: nginx-blue
   annotations:
     alb.ingress.kubernetes.io/scheme: internet-facing
+    alb.ingress.kubernetes.io/group.name: ingress-demo
     alb.ingress.kubernetes.io/target-type: instance
     kubernetes.io/ingress.class: alb
+    # Health Check Settings
     alb.ingress.kubernetes.io/healthcheck-protocol: HTTP
+    alb.ingress.kubernetes.io/healthcheck-port: traffic-port
+    alb.ingress.kubernetes.io/healthcheck-interval-seconds: '15'
     alb.ingress.kubernetes.io/healthcheck-timeout-seconds: '5'
-  name: node-app-ingress
+    alb.ingress.kubernetes.io/success-codes: '200'
+    alb.ingress.kubernetes.io/healthy-threshold-count: '2'
+    alb.ingress.kubernetes.io/unhealthy-threshold-count: '2'
+  name: nginx-blue
 spec:
   rules:
     - http:
@@ -17,6 +24,6 @@ spec:
           path: "/"
           backend:
             service:
-              name: node-app
+              name: nginx-blue
               port:
                 number: 80
