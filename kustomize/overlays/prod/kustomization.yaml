@@ -1,5 +1,5 @@
-namePrefix: dev-
-namespace: dev
+namePrefix: prod-
+namespace: prod
 bases:
   - ../../base
 patchesStrategicMerge:
