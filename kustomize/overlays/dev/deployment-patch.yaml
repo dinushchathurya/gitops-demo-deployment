@@ -4,4 +4,4 @@ metadata:
   name: knote
 imageTags:
   - name: limarktest/nodejs-docker
-    newTag: "136"
+    newTag: "135"
