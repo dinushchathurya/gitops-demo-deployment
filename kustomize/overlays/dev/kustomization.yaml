@@ -4,4 +4,4 @@ bases:
   - ../../base
 imageTags:
   - name: limarktest/nodejs-docker
-    newTag: latest
+    newTag: 136
