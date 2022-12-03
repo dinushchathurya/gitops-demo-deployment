@@ -2,4 +2,6 @@ namePrefix: prod-
 namespace: prod
 bases:
   - ../../base
-
+imageTags:
+  - name: limarktest/nodejs-docker
+    newTag: "135"
