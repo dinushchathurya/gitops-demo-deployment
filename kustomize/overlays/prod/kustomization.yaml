@@ -7,3 +7,4 @@ imageTags:
     newTag: v200
 patchesStrategicMerge:
   - deployment-patch.yaml
+  - service-patch.yaml
